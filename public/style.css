@@ -1,0 +1,310 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .app {
+    display: flex;
+    height: 100%;
+  }
+  
+  .side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 68px;
+    min-width: 68px;
+    justify-content: center;
+    border-right: solid 1px #eee;
+    height: 100vh;
+  }
+  
+  .logo {
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  
+  .menu li {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+  }
+  
+  .redondo {
+    display: flex;
+    justify-content: center;
+    color: rgb(29, 155, 240);
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  /* ======================
+    header
+    ======================= */
+  .header {
+    height: 68px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid 1px #eee;
+    position: fixed;
+    top: 0;
+    left: 68px;
+    background: #fff;
+  }
+  
+  .header__title {
+    padding: 0 12px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .content {
+    margin-top: 68px;
+    margin-left: 68px;
+  
+  }
+  
+  .twitter { 
+    height: 2rem; 
+    fill: rgb(29, 155, 240);
+    width: 24px;
+  }
+  
+  .icons {
+    height: 2rem; 
+    fill: rgb(0,0,0);
+    width: 24px;
+  }
+  
+  .iconstwo {
+    height: 1rem; 
+    fill: rgb(29, 155, 240);
+    height: 17px;
+    width: 17px;
+    float: left;
+    overflow: hidden;
+    min-width: 36px;
+    
+  
+  } 
+  
+  .iconstre {
+    height: 1rem; 
+    fill: rgb(0, 0, 0);
+    height: 17px;
+    width: 17px;
+    min-width: 36px;
+    justify-content: space-between;
+    
+  
+  }
+  
+  /* ======================
+    buttons
+    ======================= */
+  .button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 24px;
+    background-color: rgb(29, 155, 240);
+    color: #fff;
+    transition: ease .3s background-color;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: rgb(26, 140, 216);
+  }
+  /* toda vez que um que você tiver mais de 1 classe você pode unilas para formar uma nova*/
+  .button--tweet {
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 25px;
+  }
+  
+  .button--tweet .icons {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+  }
+  
+  
+  .disabled {
+    background-color: rgb(29, 155, 240);
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .tweet {
+  
+    font-size: 18px;
+    overflow: hidden;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    position: relative;
+    white-space: pre-wrap;
+    border-radius: 4px;
+    
+  }
+  
+  .shine { /* brilho */
+    height: 2rem; 
+    fill: rgb(0,0,0);
+    width: 20px;
+  }
+  
+  .photo {
+    height: 48px;
+    width: 48px;
+    bottom: 0px;
+    border-color: rgba(0, 0, 0, 0.04);
+    border-radius: 9999px;
+    overflow: hidden;
+    flex-basis: 48px;
+    float: left;
+    border-width: 1px
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tweetAdd {
+    border-right: solid 1px #eee;
+    display: grid;
+    grid-template-columns: 72px 483px;
+    width: 100%;
+  }
+  
+  .tweetAdd__photo {
+    padding: 12px;
+    height: 150px;
+    width: 72px;
+    position: relative;
+    display: grid;
+    align-content: space-between;
+  }
+  
+  .tweetAdd__input {
+    width: 100%;
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .tweetAdd__button {
+    padding: 12px;
+    height: 39px;
+    width: 36px;
+    justify-content: end;
+  
+  }
+  
+  .iconsmini {
+    height: 52px;
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+    
+  
+  .buttonicons {
+    height: 53px;
+    width: 510px;
+  
+  }
+  
+  .secundtweet {
+    grid-template-columns: 72px 598px ;
+    display: grid;
+    border-right: solid 1px #eee;
+  }
+  
+  .secundtweet .comenter {
+    justify-content: end;
+    position: relative;;
+    height: 70px;
+    width: 510px;
+    display: grid;
+    
+  }
+  
+  .secundtweet .tweetAdd__phototwo {
+    padding: 12px;
+    height: 150px;
+    width: 72px;
+    position: relative;
+    display: grid;
+  
+  }
+  
+  .secundtweet .nome {
+    display: grid;
+    height: 28px;
+    width: 460px;
+    font-weight: 700;
+    display: flex;
+  }
+  
+  .very {
+    max-width: 20px;
+    max-height: 20px;
+  }
+  
+  .bloc {
+    display: flex;
+    flex-direction: column
+  }
+  
+  .iconstree {
+    height: 28px;
+    width: 460px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .arroba {
+  font-weight: normal;
+  
+  }
+  
+  .time {
+    font-weight: normal;
+    height: 17px;
+    width: 33px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+  .iconesbutton {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   
+  }
+  
+  .iconesajust {
+    display: flex;
+  }
+  
+  
